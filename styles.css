@@ -1,0 +1,40 @@
+:root {
+  color-scheme: dark;
+  background: #06162b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #06162b;
+}
+
+body {
+  min-height: 100svh;
+}
+
+.home-screen {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
+  place-items: center;
+  overflow: hidden;
+}
+
+.home-screen__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  user-select: none;
+  -webkit-user-drag: none;
+}
