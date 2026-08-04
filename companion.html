@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Astrea — Sélection du compagnon</title>
+  <meta name="theme-color" content="#07152a">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="screen screen--companion" aria-label="Sélection du compagnon">
+      <div class="screen-bg" style="background-image:url('assets/background-companion-selection.png')"></div>
+
+      <div class="stage-mask stage-mask--pet" id="petStageMask" aria-hidden="true"></div>
+      <div class="hero-stage hero-stage--pet" aria-live="polite">
+        <img id="petImage" class="hero-image hero-image--hidden" alt="">
+      </div>
+
+      <div class="hotspots hotspots--pets" aria-label="Choix du compagnon">
+        <button class="hotspot pet-card" data-pet="tiger" aria-label="Choisir le Tigre glacial" title="Choisir le Tigre glacial"></button>
+        <button class="hotspot pet-card" data-pet="gelapuf" aria-label="Choisir Gélapuf" title="Choisir Gélapuf"></button>
+        <button class="hotspot pet-card is-selected" data-pet="deer" aria-label="Choisir la Biche étoilée" title="Choisir la Biche étoilée"></button>
+      </div>
+
+      <button id="companionNextButton" class="hotspot nav-button nav-button--next" aria-label="Valider le compagnon" title="Valider"></button>
+      <button id="companionBackButton" class="hotspot nav-button nav-button--back" aria-label="Retour vers les classes" title="Retour"></button>
+
+      <div class="selection-chip" id="petSelectionChip">Compagnon sélectionné : Biche étoilée</div>
+    </section>
+  </main>
+  <script src="js/companion-selection.js"></script>
+</body>
+</html>
