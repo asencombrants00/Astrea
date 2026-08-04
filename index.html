@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Astrea — Sélection des classes</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="screen" aria-label="Création de personnage">
+      <img class="screen-bg" src="assets/background-classes.png" alt="Création de personnage dans la taverne">
+      <div class="stage-shadow stage-shadow--class"></div>
+      <div class="stage stage--class"><img id="classSprite" class="sprite" alt=""></div>
+      <div class="hotspots class-hotspots">
+        <button class="card-btn class-btn" data-class="knight" aria-label="Chevalier"></button>
+        <button class="card-btn class-btn" data-class="hunter" aria-label="Chasseur"></button>
+        <button class="card-btn class-btn" data-class="wizard" aria-label="Sorcier"></button>
+        <button class="card-btn class-btn" data-class="sage" aria-label="Sage"></button>
+      </div>
+      <button id="classNext" class="nav-btn nav-btn--next" aria-label="Suivant"></button>
+      <button id="classBack" class="nav-btn nav-btn--back" aria-label="Retour"></button>
+      <div id="classStatus" class="status-pill"></div>
+    </section>
+  </main>
+  <script src="js/classes.js"></script>
+</body>
+</html>
