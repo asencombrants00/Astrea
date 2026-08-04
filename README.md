@@ -23,3 +23,4 @@ Puis ouvrir `http://localhost:8000`.
 ## GitHub Pages
 
 Déposer le contenu du dossier à la racine du dépôt, puis activer GitHub Pages depuis la branche principale.
+Jeu FR
